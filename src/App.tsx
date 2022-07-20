@@ -57,9 +57,9 @@ const App = () => {
   return (
     <>
       <div className="grid grid-cols-3 h-full">
-        <Pane {...state.vegetable} onToggleLock={() => toggleLock('vegetable')} />
-        <Pane {...state.carb} onToggleLock={() => toggleLock('carb')} />
-        <Pane {...state.meat} onToggleLock={() => toggleLock('meat')} />
+        <Pane {...state.vegetable} onToggleLock={() => toggleLock('vegetable')} color="green" />
+        <Pane {...state.carb} onToggleLock={() => toggleLock('carb')} color="beige" />
+        <Pane {...state.meat} onToggleLock={() => toggleLock('meat')} color="red" />
       </div>
       <button className="fixed right-12 bottom-12 text-6xl" onClick={generate}>🔄</button>
     </>
