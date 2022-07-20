@@ -3,3 +3,5 @@ export type Food = {
   icon: string;
   weight?: number;
 }
+
+export type FullFood = Required<Food>
