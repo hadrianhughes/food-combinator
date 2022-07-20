@@ -61,7 +61,7 @@ const App = () => {
         <Pane {...state.carb} onToggleLock={() => toggleLock('carb')} color="beige" />
         <Pane {...state.meat} onToggleLock={() => toggleLock('meat')} color="red" />
       </div>
-      <button className="fixed right-12 bottom-12 text-6xl" onClick={generate}>🔄</button>
+      <button className="fixed bottom-24 right-1/2 translate-x-1/2 text-6xl md:right-12 md:bottom-12 md:transform-none" onClick={generate}>🔄</button>
     </>
   )
 }
