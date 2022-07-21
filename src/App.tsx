@@ -56,7 +56,7 @@ const App = () => {
 
   return (
     <>
-      <div className="grid grid-cols-3 h-full">
+      <div className="grid grid-cols-3 h-full divide-x-2 divide-black">
         <Pane {...state.vegetable} onToggleLock={() => toggleLock('vegetable')} color="green" />
         <Pane {...state.carb} onToggleLock={() => toggleLock('carb')} color="beige" />
         <Pane {...state.meat} onToggleLock={() => toggleLock('meat')} color="red" />
